@@ -1,0 +1,169 @@
+.form-container {
+  margin: 0 auto;
+  width: 70vw;
+  position: relative;
+  border-radius: 10px;
+  height: 600px;
+  display: grid;
+}
+
+.form-success {
+  text-align: center;
+  font-size: 24px;
+  margin-top: 80px;
+  color: black;
+}
+
+.form-content-right {
+  border-radius: 0 10px 10px 0;
+  position: relative;
+  color: black;
+}
+
+.form {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 90%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.form h1 {
+  font-size: 1rem;
+  text-align: start;
+  width: 80%;
+  margin-bottom: 1rem;
+  color: black;
+}
+
+.form-inputs {
+  margin-bottom: 0.5rem;
+  width: 90vw;
+}
+
+.rbgroup-grouper {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  font-size: 1.2rem;
+  font-weight: 600;
+  gap: 10%;
+  margin-bottom: 7%;
+}
+
+.mb {
+  margin-bottom: 7%;
+}
+.rb {
+  width: 20px;
+  height: 25px;
+}
+
+.rbgroup {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.form-inputs p {
+  font-size: 0.8rem;
+  margin-top: 0.5rem;
+  color: #f00e0e;
+}
+
+.form-label {
+  display: inline-block;
+  font-size: 1.2rem;
+  margin-bottom: 6px;
+  color: black;
+}
+
+.form-input {
+  display: block;
+  padding-left: 10px;
+  outline: none;
+  border-radius: 2px;
+  height: 40px;
+  width: 100%;
+  border: none;
+  background-color: rgba(208, 204, 204, 0.653);
+}
+
+.form-input::placeholder {
+  color: #595959;
+  font-size: 1rem;
+}
+
+.form-input-btn {
+  width: 80%;
+  height: 50px;
+  margin-top: 10px;
+  border-radius: 2px;
+  background-color: #c3e214;
+  background-color: #b2ce25;
+  outline: none;
+  border: none;
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 1.5rem;
+  font-weight: 500;
+  letter-spacing: 5px;
+  transition: all 0.4s ease-out;
+}
+.form0 {
+  width: 100vw;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.rlabel {
+  place-self: center;
+}
+
+.rd {
+  width: 18px;
+  height: 18px;
+}
+.form-input-btn:hover {
+  cursor: pointer;
+
+  background-color: #a7be39;
+  background-color: #89a006;
+
+  transition: all 0.4s ease-out;
+}
+
+.form-input-login {
+  font-size: 0.8rem;
+  margin-top: 10px;
+  color: #fff;
+  width: 80%;
+  text-align: center;
+}
+
+.form-input-login a {
+  text-decoration: none;
+  color: #27cdff;
+  font-weight: 600;
+}
+.package-selector {
+  width: 70vw;
+  height: 35px;
+  font-size: 1rem;
+}
+@media screen and (max-width: 960px) {
+  .package-selector {
+    font-size: 0.9rem;
+  }
+}
+
+.d-flex {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 10px;
+}

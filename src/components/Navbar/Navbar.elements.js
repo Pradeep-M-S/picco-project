@@ -1,11 +1,12 @@
-import styled from 'styled-components';
-import { FaMagento } from 'react-icons/fa';
-import { Link } from 'react-router-dom';
-import { Container } from '../../globalStyles';
+import styled from "styled-components";
+import { FaTaxi } from "react-icons/fa";
+import { Link } from "react-router-dom";
+import { Container } from "../../globalStyles";
 
 export const Nav = styled.nav`
-  background: #101522;
-  height: 80px;
+  background: #fff;
+  height: 50px;
+  box-shadow: 0px 3px 7px 0px rgba(0, 0, 0, 0.14);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -18,22 +19,23 @@ export const Nav = styled.nav`
 export const NavbarContainer = styled(Container)`
   display: flex;
   justify-content: space-between;
-  height: 80px;
+  height: 60px;
 
   ${Container}
 `;
 
 export const NavLogo = styled(Link)`
-  color: #fff;
+  color: #000;
   justify-self: flex-start;
   cursor: pointer;
   text-decoration: none;
-  font-size: 2rem;
+  font-size: 1.3rem;
+  text-transform: capitalize;
   display: flex;
   align-items: center;
 `;
 
-export const NavIcon = styled(FaMagento)`
+export const NavIcon = styled(FaTaxi)`
   margin-right: 0.5rem;
 `;
 
@@ -45,8 +47,8 @@ export const MobileIcon = styled.div`
     position: absolute;
     top: 0;
     right: 0;
-    transform: translate(-100%, 60%);
-    font-size: 1.8rem;
+    transform: translate(-100%, 50%);
+    font-size: 1.4rem;
     cursor: pointer;
   }
 `;
@@ -61,13 +63,13 @@ export const NavMenu = styled.ul`
     display: flex;
     flex-direction: column;
     width: 100%;
-    height: 90vh;
+    height: 100vh;
     position: absolute;
-    top: 80px;
-    left: ${({ click }) => (click ? 0 : '-100%')};
+    top: 50px;
+    left: ${({ click }) => (click ? 0 : "-100%")};
     opacity: 1;
     transition: all 0.5s ease;
-    background: #101522;
+    background: #eee;
   }
 `;
 
@@ -99,7 +101,7 @@ export const NavItemBtn = styled.li`
 `;
 
 export const NavLinks = styled(Link)`
-  color: #fff;
+  color: black;
   display: flex;
   align-items: center;
   text-decoration: none;

@@ -1,0 +1,15 @@
+.selector-container {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  background-color: #eee;
+  height: 50px;
+  transition: all 0.4s ease;
+}
+
+.bg {
+  color: white;
+  background-color: yellowgreen;
+  border-radius: 15px;
+  transition: all 0.4s ease;
+}

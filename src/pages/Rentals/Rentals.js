@@ -1,17 +1,17 @@
 import React from "react";
+import Selector from "../../components/Selector";
+import Form2 from "../../components/Form/Form2";
 // import { homeObjOne, homeObjTwo, homeObjThree, homeObjFour } from "./Data";
 // import { InfoSection, Pricing } from "../../components";
-import Form from "../../components/Form/Form";
-import Selector from "../../components/Selector";
 
-function Home() {
+function Rentals() {
   return (
     <>
       {" "}
-      <Selector primary />
-      <Form />
+      <Selector secondary />
+      <Form2 />
     </>
   );
 }
 
-export default Home;
+export default Rentals;
