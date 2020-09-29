@@ -9,5 +9,12 @@ export const ButtonNoOutline = styled(Link)`
   padding: 0.5rem 1rem;
   height: 100%;
   cursor: pointer;
+  border-radius: 20px;
+  transition: all 0.5s ease;
   font-size: 1rem;
+
+  &:hover {
+    background-color: #c3e214;
+    transition: all 0.5s ease;
+  }
 `;

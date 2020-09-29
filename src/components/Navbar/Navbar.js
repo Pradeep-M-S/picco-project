@@ -45,18 +45,7 @@ function Navbar() {
             <MobileIcon onClick={handleClick}>
               {click ? <AiOutlineClose /> : <AiOutlineMenu />}
             </MobileIcon>
-            <NavMenu onClick={handleClick} click={click}>
-              <NavItem>
-                <NavLinks to="/" onClick={closeMobileMenu}>
-                  Outstations
-                </NavLinks>
-              </NavItem>
-              <NavItem>
-                <NavLinks to="/rentals" onClick={closeMobileMenu}>
-                  Rentals
-                </NavLinks>
-              </NavItem>
-            </NavMenu>
+            <NavMenu onClick={handleClick} click={click}></NavMenu>
           </NavbarContainer>
         </Nav>
       </IconContext.Provider>

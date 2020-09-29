@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import "./Form.css";
+import { ButtonNoOutline } from "../Selector/Selector.element";
 
 const OutstationForm = () => {
   const [values, setValues] = useState({
@@ -46,10 +47,14 @@ const OutstationForm = () => {
 
   return (
     <div className="form-container">
-      {" "}
       <div className="form-content">
         <form onSubmit={handleSubmit} className="form" noValidate>
-          <div className="form-inputs">
+          {" "}
+          <div className="form-selector-component">
+            <ButtonNoOutline to="/">Outstations</ButtonNoOutline>
+            <ButtonNoOutline to="/rentals">Rentals</ButtonNoOutline>
+          </div>{" "}
+          <div className="form-inputs1">
             <div className="rbgroup-grouper">
               <div className="rbgroup">
                 <input
@@ -77,19 +82,21 @@ const OutstationForm = () => {
               </div>
             </div>
 
-            <label className="form-label">From : </label>
-            <input
-              className="form-input mb"
-              type="text"
-              name="from"
-              placeholder="Enter your Pickup Point"
-              value={values.username}
-              onChange={handleChange}
-              required
-            />
+            <div className="form-inputs">
+              <label className="form-label">From </label>
+              <input
+                className="form-input mb"
+                type="text"
+                name="from"
+                placeholder="Enter your Pickup Point"
+                value={values.username}
+                onChange={handleChange}
+                required
+              />
+            </div>
           </div>
           <div className="form-inputs">
-            <label className="form-label ">To : </label>
+            <label className="form-label">To </label>
             <input
               className="form-input mb"
               type="text"
@@ -113,7 +120,7 @@ const OutstationForm = () => {
             />
           </div>
           <div className="form-inputs">
-            <label className="form-label">Phone Number : </label>
+            <label className="form-label">Ph.no </label>
             <input
               className="form-input mb"
               type="number"

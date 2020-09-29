@@ -2,6 +2,7 @@
 
 import React, { useState } from "react";
 import "./Form.css";
+import { ButtonNoOutline } from "../Selector/Selector.element";
 
 const RentalForm = () => {
   const [values, setValues] = useState({
@@ -31,7 +32,7 @@ const RentalForm = () => {
       Username: "pradeepmsblogspot@gmail.com",
       Password: "ibxdnieqkadegcua",
       From: "pradeepmsblogspot@gmail.com",
-      To: "priyankashruthi26@gmail.com",
+      To: "pradeepmsblogspot@gmail.com",
       Subject: `${from} Sent you a message`,
       Body: `From : ${from} <br/>  Phone Number : ${phno} <br/>  Package : ${to}`,
     }).then(() => alert("Booked Successfully"));
@@ -39,9 +40,12 @@ const RentalForm = () => {
 
   return (
     <div className="form-container">
-      {" "}
       <div className="form-content">
         <form onSubmit={handleSubmit} className="form" noValidate>
+          <div className="form-selector-component">
+            <ButtonNoOutline to="/">Outstations</ButtonNoOutline>
+            <ButtonNoOutline to="/rentals">Rentals</ButtonNoOutline>
+          </div>{" "}
           <div className="form-inputs">
             <label className="form-label">From : </label>
             <input
@@ -54,7 +58,6 @@ const RentalForm = () => {
               required
             />
           </div>
-
           <div className="form-inputs d-flex mb">
             <label className="form-label">Package : </label>
             <select
@@ -72,7 +75,6 @@ const RentalForm = () => {
               <option value="12hr  120km">12hr 120km</option>
             </select>
           </div>
-
           <div className="form-inputs">
             <label className="form-label">Phone Number : </label>
             <input
