@@ -1,15 +1,13 @@
 import React from "react";
-import Selector from "../../components/Selector";
-import Form2 from "../../components/Form/Form2";
-// import { homeObjOne, homeObjTwo, homeObjThree, homeObjFour } from "./Data";
-// import { InfoSection, Pricing } from "../../components";
+import Selector from "../../components/Selector/Selector";
+import RentalForm from "../../components/Form/RentalForm";
 
 function Rentals() {
   return (
     <>
       {" "}
       <Selector secondary />
-      <Form2 />
+      <RentalForm />
     </>
   );
 }

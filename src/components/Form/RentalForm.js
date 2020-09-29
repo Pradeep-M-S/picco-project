@@ -1,7 +1,9 @@
+//* Rental form page
+
 import React, { useState } from "react";
 import "./Form.css";
 
-const Form2 = ({ submitForm }) => {
+const RentalForm = () => {
   const [values, setValues] = useState({
     from: "",
     phno: "",
@@ -36,9 +38,9 @@ const Form2 = ({ submitForm }) => {
   }
 
   return (
-    <div class="form-container">
+    <div className="form-container">
       {" "}
-      <div className="form-content-right">
+      <div className="form-content">
         <form onSubmit={handleSubmit} className="form" noValidate>
           <div className="form-inputs">
             <label className="form-label">From : </label>
@@ -92,4 +94,4 @@ const Form2 = ({ submitForm }) => {
   );
 };
 
-export default Form2;
+export default RentalForm;

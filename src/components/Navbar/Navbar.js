@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { AiOutlineMenu, AiOutlineClose } from "react-icons/ai";
 import { IconContext } from "react-icons/lib";
-import { Button } from "../../globalStyles";
 import {
   Nav,
   NavbarContainer,
@@ -10,9 +9,7 @@ import {
   NavMenu,
   NavIcon,
   NavItem,
-  NavItemBtn,
   NavLinks,
-  NavBtnLink,
 } from "./Navbar.elements";
 
 function Navbar() {
@@ -53,35 +50,12 @@ function Navbar() {
                 <NavLinks to="/" onClick={closeMobileMenu}>
                   Outstations
                 </NavLinks>
-              </NavItem>{" "}
+              </NavItem>
               <NavItem>
                 <NavLinks to="/rentals" onClick={closeMobileMenu}>
                   Rentals
                 </NavLinks>
               </NavItem>
-              {/* <NavItem>
-                <NavLinks to="/services" onClick={closeMobileMenu}>
-                  Services
-                </NavLinks>
-              </NavItem>
-              <NavItem>
-                <NavLinks to="/products" onClick={closeMobileMenu}>
-                  Products
-                </NavLinks>
-              </NavItem>
-              <NavItemBtn>
-                {button ? (
-                  <NavBtnLink to="/sign-up">
-                    <Button primary>SIGN UP</Button>
-                  </NavBtnLink>
-                ) : (
-                  <NavBtnLink to="/sign-up">
-                    <Button onClick={closeMobileMenu} fontBig primary>
-                      SIGN UP
-                    </Button>
-                  </NavBtnLink>
-                )}
-              </NavItemBtn> */}
             </NavMenu>
           </NavbarContainer>
         </Nav>

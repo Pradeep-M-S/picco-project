@@ -1,6 +1,5 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-
 ## Available Scripts
 
 In the project directory, you can run:
@@ -67,3 +66,15 @@ This section has moved here: https://facebook.github.io/create-react-app/docs/de
 ### `yarn build` fails to minify
 
 This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+
+### Project Details
+
+1. There are 3 components named Form , Navbar ,Selector (The Outstation or Rental Page Selector)
+
+2. Form Component Folder contains of a .css file which shares the styling of both the Outstation form and Rental form
+
+3. The OutstationForm and RentalForm page consists of a SMTP service through which the emails are sent to the respected email id mentioned in the "to" prop , change the "to" prop to the preferred email id.
+
+4. Navbar Component Folder contains two js files in which the navbar.elements file is the styled component styles
+
+5. Selector Component contains routing for the pages selected.

@@ -32,7 +32,14 @@ export const NavLogo = styled(Link)`
   font-size: 1.3rem;
   text-transform: capitalize;
   display: flex;
+  padding: 10px;
+  height: 60px;
   align-items: center;
+  &:hover {
+    background-color: yellowgreen;
+    transition: all 0.3s ease;
+    border-radius: 30px;
+  }
 `;
 
 export const NavIcon = styled(FaTaxi)`
@@ -74,18 +81,22 @@ export const NavMenu = styled.ul`
 `;
 
 export const NavItem = styled.li`
-  height: 80px;
-  border-bottom: 2px solid transparent;
+  height: 40px;
+  border-radius: 20px;
+  transition: all 0.3s ease;
 
-  &:hover {
-    border-bottom: 2px solid #4b59f7;
+  @media screen and (min-width: 960px) {
+    &:hover {
+      background-color: yellowgreen;
+      transition: all 0.3s ease;
+    }
   }
-
   @media screen and (max-width: 960px) {
     width: 100%;
 
     &:hover {
       border: none;
+      background-color: none;
     }
   }
 `;
