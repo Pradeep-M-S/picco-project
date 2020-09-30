@@ -29,16 +29,18 @@ export const NavLogo = styled(Link)`
   justify-self: flex-start;
   cursor: pointer;
   text-decoration: none;
-  font-size: 1.3rem;
+  font-size: 1.2rem;
   text-transform: capitalize;
   display: flex;
-  padding: 10px;
-  height: 60px;
+  margin-top: 7.8px;
+  padding: 0 10px;
+  border-radius: 30px;
+  height: 47px;
   align-items: center;
+  transition: all 0.3s ease;
+
   &:hover {
-    background-color: yellowgreen;
     transition: all 0.3s ease;
-    border-radius: 30px;
   }
 `;
 

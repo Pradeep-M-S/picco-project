@@ -8,8 +8,6 @@ import {
   MobileIcon,
   NavMenu,
   NavIcon,
-  NavItem,
-  NavLinks,
 } from "./Navbar.elements";
 
 function Navbar() {
